@@ -9,12 +9,12 @@ But please do give it a shot!
 # Cached Texture files for BeamNG
 [![Generic Badge](https://img.shields.io/badge/dynamic/json?logoColor=violet&color=FF6600&link=https://wiki.beamng.com/images/b/be/BeamNG-logo-icon-2016.svg&label=Games%20Fixed&query=download_count&url=https://api.github.com/repos/SnoutBug/BeamNG_terrainMaterialCache/releases/assets/52289435)](https://github.com/SnoutBug/BeamNG_terrainMaterialCache/releases/tag/default)
 
-Hack to fix the Black Terrain found after the 0.24 release on Linux
+Hack to fix the Black Terrain found after the 0.24 release on Linux using Proton/Wine or Mac using Crossover
 
 Massive thanks to every contributor for providing the pre-generated textures for this transplant.
 
 ## [Script] Usage
-Paste the following command into your terminal
+Paste the following command into your terminal (Note: This script will only work on Linux Systems, Mac users go [here](https://github.com/SnoutBug/BeamNG_terrainMaterialCache/blob/main/README.md#running-the-game-with-crossover---mac))
 ```Bash
 curl https://raw.githubusercontent.com/SnoutBug/BeamNG_terrainMaterialCache/main/auto_update.py | python3 -
 ```
@@ -46,6 +46,7 @@ ls *.tar.gz | xargs -n 1 tar -xvf
 rm *.tar.gz
 cd ~/
 ```
+
 ### BeamNG Repository (Mods)
  1. Look at the URL of your map (eg. www.beamng.com/resources/natural-playground.18030/)
  2. Copy the number behind the period (18030) to the following URL like this: www.github.com/SnoutBug/BeamNG_terrainMaterialCache/releases/tag/18030
@@ -69,6 +70,14 @@ mkdir ../../compatdata/284160/pfx/drive_c/users/steamuser/AppData/Local/BeamNG.d
  mkdir ~/.wine/drive_c/users/$USER/AppData/Local/BeamNG.drive/0.25/temp/art
  ```
  4. If successful: Copy the all commands from [above](https://github.com/SnoutBug/BeamNG_terrainMaterialCache#default-maps) (**excluding** the first one)
+
+ #### Running the game with CrossOver - Mac
+ 1. Select your Bottle towards the left of crossover
+ 2. Open advanced options and click on the Open C: drive button
+ 3. Finder will open, navigate to `/users/crossover/Local/AppData/BeamNG.drive/0.25/temp/art`
+  - Should the `temp` or `art` folders not exist, create them.
+ 4. Once inside the `art` folder, open the Terminal [at the current location](https://www.maketecheasier.com/launch-terminal-current-folder-mac/)
+ 5. Use the commands [above](https://github.com/SnoutBug/BeamNG_terrainMaterialCache#default-maps) **excluding** the first two (`mkdir` and `cd`)
 
 ## Contribute
 ### You created a map using a PBR terrain and want to contribute
